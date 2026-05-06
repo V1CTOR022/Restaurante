@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAVI — Carnes & Vinhos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="loading">
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <span class="loader-logo" aria-label="CAVI">
+      <img src="assets/loogo.png" alt="CAVI" onerror="this.closest('.loader-logo').textContent='CAVI'" />
+    </span>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="CAVI">
+        <img src="assets/loogo.png" alt="CAVI" onerror="this.outerHTML='CAVI'" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="cardapio.html">Menu</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <a href="#reservation" class="btn btn-outline nav-cta">Reservar Mesa</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Carnes & Vinhos</span>
+      <h1 class="hero-title">Experiência especializada<br /><em>em carnes e vinhos</em></h1>
+      <p class="hero-sub">Especialistas em cortes nobres preparados no Josper a carvão, harmonizados com uma curadoria exclusiva de vinhos.</p>
+      <div class="hero-actions">
+        <a href="cardapio.html" class="btn btn-dark">Ver Menu</a>
+        <a href="#reservation" class="btn btn-outline">Fazer Reserva</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <div class="hero-img"></div>
+      </div>
+      <div class="hero-badge">
+        <span class="badge-num">+50</span>
+        <span class="badge-txt">rótulos de<br />vinho</span>
+      </div>
+    </div>
+    <div class="hero-scroll" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-media">
+        <div class="about-img-main"></div>
+        <div class="about-img-accent"></div>
+        <div class="about-stat">
+          <strong>4.5</strong>
+          <span>⭐ Avaliação</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-eyebrow">Nossa História</span>
+        <h2 class="section-title">Paixão por carnes<br /><em>e grandes vinhos</em></h2>
+        <p>A verdadeira experiência gastronômica começa aqui.
+Seleções nobres de carnes, preparadas com excelência, harmonizadas com grandes vinhos que elevam cada momento a outro nível.</p>
+        <p>Com o Josper, o forno espanhol a carvão, preservamos toda a suculência.</p>
+        <div class="about-highlights">
+          <div class="highlight">
+            <strong>+50</strong>
+            <span>Rótulos de vinho</span>
+          </div>
+          <div class="highlight">
+            <strong>10+</strong>
+            <span>Cortes nobres</span>
+          </div>
+          <div class="highlight">
+            <strong>Josper</strong>
+            <span>Forno a carvão</span>
+          </div>
+        </div>
+        <a href="#reservation" class="btn btn-dark">Reserve sua mesa</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Galeria</span>
+        <h2 class="section-title">Fogo, carne<br /><em>e vinho</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gi-large"></div>
+        <div class="gallery-item gi-tall"></div>
+        <div class="gallery-item gi-sm"></div>
+        <div class="gallery-item gi-sm gi-sm2"></div>
+        <div class="gallery-item gi-wide"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOMMELIER -->
+  <section class="sommelier-section section" id="sommelier">
+    <div class="container sommelier-grid">
+      <div class="sommelier-media reveal">
+        <div class="sommelier-img" role="img" aria-label="Sommelier"></div>
+        <div class="sommelier-card">
+          <strong>Sommelier</strong>
+          <span>Harmonizações sob medida</span>
+        </div>
+      </div>
+      <div class="sommelier-text reveal">
+        <span class="section-eyebrow">Sommelier</span>
+        <h2 class="section-title">O vinho ideal<br /><em>para cada prato</em></h2>
+        <p>Da taça ao rótulo especial, nossa equipe orienta a escolha com base no corte, no ponto e no seu paladar — para harmonizações que elevam a experiência.</p>
+        <div class="sommelier-features">
+          <div class="sommelier-feature">
+            <strong>Taças</strong>
+            <span>Seleção rotativa</span>
+          </div>
+          <div class="sommelier-feature">
+            <strong>Rótulos</strong>
+            <span>Curadoria exclusiva</span>
+          </div>
+          <div class="sommelier-feature">
+            <strong>Harmonização</strong>
+            <span>Harmonizações sob medida</span>
+          </div>
+        </div>
+        <a href="https://wa.me/552127193440?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20o%20sommelier%20para%20uma%20recomenda%C3%A7%C3%A3o%20de%20vinho." class="btn btn-outline" target="_blank" rel="noopener">Fale com o sommelier</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location-section section" id="location">
+    <div class="container location-grid">
+      <div class="location-text reveal">
+        <span class="section-eyebrow">Localização</span>
+        <h2 class="section-title">Venha nos visitar<br /><em>no mapa</em></h2>
+        <p class="location-address">
+          <strong>Rua Mariz e Barros, 171</strong><br />
+          Icaraí, Niterói - RJ
+        </p>
+        <div class="location-actions">
+          <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Rua%20das%20Flores%2C%20340%2C%20Jardins%2C%20S%C3%A3o%20Paulo%20-%20SP" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+      </div>
+      <div class="location-map reveal" aria-label="Mapa">
+        <iframe
+          title="Mapa — CAVI"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Rua%20Mariz%20e%20Barros%2C%20171%2C%20Icaraí%2C%20Niterói%20-%20RJ%2C%2024220-120&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="reservation-section section" id="reservation">
+    <div class="container reservation-grid">
+      <div class="reservation-info">
+        <span class="section-eyebrow">Reservas</span>
+        <h2 class="section-title">Reserve sua<br /><em>experiência</em></h2>
+        <div class="res-detail">
+          <div class="res-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 7v5l3 2"></path>
+            </svg>
+          </div>
+          <div>
+            <strong>Horários</strong>
+            <p>Abertos todos os dias a partir de 12h</p>
+          </div>
+        </div>
+        <div class="res-detail">
+          <div class="res-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s7-4.4 7-11a7 7 0 0 0-14 0c0 6.6 7 11 7 11z"></path>
+              <circle cx="12" cy="10" r="2.2"></circle>
+            </svg>
+          </div>
+          <div>
+            <strong>Endereço</strong>
+            <p> Rua Mariz e Barros, 171<br />Icaraí, Niterói - RJ</p>
+          </div>
+        </div>
+        <div class="res-detail">
+          <div class="res-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6.4 6.4l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <strong>Telefone</strong>
+            <p id="reservationPhone">(21) 2719-3440</p>
+          </div>
+        </div>
+      </div>
+      <div class="reservation-form reservation-whatsapp" id="reservationWhatsApp">
+        <div class="form-head">
+          <h3 class="form-title">Reservas por mensagem</h3>
+          <p class="form-sub">Preencha se quiser (opcional) e clique para enviar sua mensagem.</p>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="wa_name">Nome</label>
+            <input type="text" id="wa_name" placeholder="Seu nome" />
+          </div>
+          <div class="form-group">
+            <label for="wa_date">Data</label>
+            <div class="input-wrap date-picker" id="waDatePicker">
+              <span class="input-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="4"></rect>
+                  <path d="M16 2v4M8 2v4"></path>
+                  <path d="M3 10h18"></path>
+                </svg>
+              </span>
+              <input type="text" id="wa_date_display" placeholder="Selecione a data" inputmode="none" readonly aria-haspopup="dialog" aria-expanded="false" />
+              <input type="hidden" id="wa_date" />
+              <div class="date-popover" id="waDatePopover" role="dialog" aria-label="Selecionar data" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="wa_time">Horário</label>
+            <select id="wa_time">
+              <option value="">Selecione</option>
+              <option>12:00</option><option>12:30</option>
+              <option>13:00</option><option>13:30</option>
+              <option>19:00</option><option>19:30</option>
+              <option>20:00</option><option>20:30</option>
+              <option>21:00</option><option>21:30</option>
+              <option>22:00</option><option>22:30</option>
+              <option>23:00</option><option>23:30</option>
+              <option>00:00</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="wa_guests">Pessoas</label>
+            <select id="wa_guests">
+              <option value="">Selecione</option>
+              <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option>
+              <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+              <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+              <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="wa_notes">Observações</label>
+          <textarea id="wa_notes" rows="3" placeholder="Alergias, ocasiões especiais, preferências..."></textarea>
+        </div>
+        <button type="button" class="btn btn-whatsapp btn-full" id="whatsappReserve">
+          Reservar por mensagem
+        </button>
+        <p class="form-note">Resposta mais rápida por mensagem.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo" aria-label="CAVI">
+          <img src="assets/loogo.png" alt="CAVI" onerror="this.outerHTML='CAVI'" />
+        </a>
+        <p>Experiência especializada em carnes e vinhos.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/caviemporio/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/caviemporio" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://wa.me/552127193440?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20o%20restaurante." aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#about">Sobre nós</a></li>
+          <li><a href="#menu">Cardápio</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#reservation">Reservas</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Funcionamento</h4>
+        <ul>
+          <li>Abertos todos os dias</li>
+          <li>A partir de 12h</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li>Rua Mariz e Barros, 171</li>
+          <li>Icaraí, Niterói - RJ, 24220-120</li>
+          <li> (21) 2719-3440</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 CAVI Restaurante. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
